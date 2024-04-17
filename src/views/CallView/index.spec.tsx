@@ -3,9 +3,9 @@ import { render } from "@testing-library/react";
 import * as stories from "./index.stories";
 const { Test } = composeStories(stories);
 
-describe("画面のテスト", () => {
+describe("画面テスト", () => {
   test("画面のテスト", async () => {
-    const { container } = render(<Test />);
-    await Test.play({ canvasElement: container }); 
-  });
+    const { container } = render(<Test />)
+    await Test.play({ canvasElement: container })
+  })
 })
