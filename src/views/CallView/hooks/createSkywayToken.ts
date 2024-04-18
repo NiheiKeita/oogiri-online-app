@@ -4,8 +4,6 @@ const appId: string | undefined = process.env.NEXT_PUBLIC_APP_SKYWAY_APP_ID ?? `
 const secretKey: string | undefined =process.env.NEXT_PUBLIC_APP_SKYWAY_SECRET_KEY ?? ``
 
 export const useSkywayToken = () => {
-  // console.log(appId);
-  // console.log(secretKey);
   const token = new SkyWayAuthToken({
     jti: uuidV4(),
     iat: nowInSec(),
